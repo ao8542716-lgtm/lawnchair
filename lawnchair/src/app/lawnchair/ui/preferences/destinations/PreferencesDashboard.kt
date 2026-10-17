@@ -81,6 +81,7 @@ import app.lawnchair.ui.preferences.navigation.Folders
 import app.lawnchair.ui.preferences.navigation.General
 import app.lawnchair.ui.preferences.navigation.Gestures
 import app.lawnchair.ui.preferences.navigation.HomeScreen
+import app.lawnchair.ui.preferences.navigation.IosGlass
 import app.lawnchair.ui.preferences.navigation.PreferenceRootRoute
 import app.lawnchair.ui.preferences.navigation.Quickstep
 import app.lawnchair.ui.preferences.navigation.Search
@@ -137,6 +138,14 @@ fun PreferencesDashboard(
                 iconResource = R.drawable.ic_general,
                 onNavigate = { onNavigate(General) },
                 isSelected = currentRoute is General,
+            )
+
+            PreferenceCategory(
+                label = stringResource(R.string.ios_glass_label),
+                description = stringResource(R.string.ios_glass_description),
+                iconResource = R.drawable.ic_ios_glass,
+                onNavigate = { onNavigate(IosGlass) },
+                isSelected = currentRoute is IosGlass,
             )
 
             PreferenceCategory(

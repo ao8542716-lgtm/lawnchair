@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ios_glass_label">iOS 26 style</string>
+    <string name="ios_glass_description">Icon pack, Liquid Glass dock and wallpaper</string>
+    <string name="ios_glass_icons_heading">Icons</string>
+    <string name="ios_glass_icon_pack">Icon pack</string>
+    <string name="ios_glass_icon_pack_none">System icons</string>
+    <string name="ios_glass_icon_shape">Icon shape</string>
+    <string name="ios_glass_heading">Liquid Glass</string>
+    <string name="ios_glass_enable">Enable Liquid Glass</string>
+    <string name="ios_glass_dock">Glass dock</string>
+    <string name="ios_glass_clear">Clear material</string>
+    <string name="ios_glass_refraction">Refraction strength</string>
+    <string name="ios_glass_dispersion">Edge dispersion</string>
+    <string name="ios_glass_tint">Glass tint</string>
+    <string name="ios_glass_sensor">Tilt-driven highlight</string>
+    <string name="ios_glass_wallpaper_heading">Wallpaper</string>
+    <string name="ios_glass_wallpaper_pick">Choose wallpaper</string>
+    <string name="ios_glass_wallpaper_hint">Glass refracts the wallpaper behind it. Android apps cannot read the system wallpaper layer, so the launcher draws its own copy. Pick one here.</string>
+    <string name="ios_glass_wallpaper_failed">Could not load that image</string>
+    <string name="ios_glass_search">Glass search bar</string>
+    <string name="ios_glass_folders">Glass folders</string>
+    <string name="ios_glass_control_center">Glass Control Center</string>
+    <string name="ios_glass_control_center_hint">Opens from the swipe-down gesture when it is set to "Open quick settings" under Gestures. Set the search bar background to 0% in Dock settings so only the glass shows.</string>
+</resources>

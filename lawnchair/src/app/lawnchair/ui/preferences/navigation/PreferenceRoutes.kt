@@ -45,6 +45,11 @@ data object General : PreferenceRootRoute, PreferenceDeepLink {
 }
 
 @Serializable
+data object IosGlass : PreferenceRootRoute, PreferenceDeepLink {
+    override val deepLink = "$URI/ios-glass"
+}
+
+@Serializable
 data object HomeScreen : PreferenceRootRoute, PreferenceDeepLink {
     override val deepLink = "$URI/home-screen"
 }

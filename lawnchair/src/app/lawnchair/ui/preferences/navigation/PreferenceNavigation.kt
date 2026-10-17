@@ -43,6 +43,7 @@ import app.lawnchair.ui.preferences.destinations.HiddenAppsPreferences
 import app.lawnchair.ui.preferences.destinations.HomeScreenGridPreferences
 import app.lawnchair.ui.preferences.destinations.HomeScreenPreferences
 import app.lawnchair.ui.preferences.destinations.IconPackPreferences
+import app.lawnchair.ui.preferences.destinations.IosGlassPreferences
 import app.lawnchair.ui.preferences.destinations.IconPickerPreference
 import app.lawnchair.ui.preferences.destinations.LauncherPopupPreference
 import app.lawnchair.ui.preferences.destinations.PickAppForGesture
@@ -118,6 +119,9 @@ fun PreferenceNavigation(
                 as? BasePreferenceManager.FontPref ?: return@composable
             FontSelection(pref)
         }
+        composable<IosGlass>(
+            deepLinks = getDeepLink(IosGlass),
+        ) { IosGlassPreferences() }
         composable<GeneralIconPack>(
             deepLinks = getDeepLink(GeneralIconPack),
         ) { IconPackPreferences() }

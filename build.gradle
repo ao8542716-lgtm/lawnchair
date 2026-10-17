@@ -459,6 +459,7 @@ dependencies {
     implementation libs.androidx.slice.core
     implementation libs.bundles.accompanist
     implementation libs.google.material
+    implementation "com.github.QWEA0:liquidglass:v2.0.11"
     implementation libs.material.motion.compose
     implementation libs.kdrag0n.colorkt
     implementation libs.coil.compose

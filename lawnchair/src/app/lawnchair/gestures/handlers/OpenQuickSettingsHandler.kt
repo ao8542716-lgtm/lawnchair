@@ -13,6 +13,8 @@ class OpenQuickSettingsHandler(
 
     @SuppressLint("WrongConstant")
     override suspend fun onTrigger(launcher: LawnchairLauncher) {
+        if (launcher.glassController?.showControlCenter() == true) return
+
         try {
             Log.v(OpenQuickSettingsHandler::class.java.simpleName, "(Tried reflection)")
             Class.forName("android.app.StatusBarManager")

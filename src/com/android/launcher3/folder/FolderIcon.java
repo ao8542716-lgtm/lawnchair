@@ -600,7 +600,7 @@ public class FolderIcon extends FrameLayout implements FloatingIconViewCompanion
 
         mPreviewItemManager.recomputePreviewDrawingParams();
 
-        if (!mBackground.drawingDelegated()) {
+        if (!mBackground.drawingDelegated() && !app.lawnchair.glass.GlassHooks.folderIconGlass) {
             mBackground.drawBackground(canvas);
         }
 

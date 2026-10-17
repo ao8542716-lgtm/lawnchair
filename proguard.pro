@@ -32,3 +32,7 @@
 # This shouldn't concern us much
 -dontwarn androidx.window.extensions.**
 -dontwarn androidx.window.sidecar.**
+
+# iOS glass (QWEA0 LiquidGlass: JNI + AGSL)
+-keep class com.example.liquidglass.** { *; }
+-keep class com.example.blur.** { *; }
